@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>JS-homework</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		
+		<header class="header">
+			<h1><span>JS</span>-lesson-homework</h1>
+		</header>
+		<div class="line"></div>
+		<nav>
+			<ul>
+				<li><a href="#one"">Haha</a></li>
+				<li><a href="#two"">Easy</a></li>
+				<li><a href="#three"">Medium</a></li>
+				<li><a href="#four"">Hard</a></li>
+			</ul>
+		</nav>
+		
+		<main>
+			<div class="main">
+				<div class="block-head">
+					<h2 id="one">Category: Haha</h2>
+					<a class="link-to" href="https://github.com/kozakvasyl/JS-Homework/tree/master/Haha" target="_blank">Link to repositopry</a>
+				</div>
+					<div class="block">
+						<div class="content">
+							<h3>0.1 Write a function that logs numbers from 10 to 0.</h3>
+							<code>
+							function numFromTenToZero() {<br>
+								for (var i = 10; i >= 0; i--) {<br>
+									console.log (i);<br>
+								}<br>
+						
+							numFromTenToZero();
+							</code>
+						</div>
+
+
+						<div class="content">
+							<h3>0.2 Write a function that implements Pythagorean theorem.</h3>
+							<code>
+							function PythagoreanTheorem(a,b) {<br>
+
+								var c = Math.sqrt(a*a + b*b);<br>
+								console.log(c);<br>
+							}
+							PythagoreanTheorem(3,4);
+							</code>
+						</div>
+
+						<div class="content">
+							<h3>0.3 Write a function to convert celsius into fahrenheit.</h3>
+							<code>
+							function convertCtoF(c) {<br>
+								var c;<br>
+								var f = c * 1.8 + 32;<br>
+								return(f);<br>
+							}<br>
+							console.log( convertCtoF(42) );
+							</code>
+						</div>
+
+						<div class="content">
+							<h3>0.4  Using prompt ask user date, name and city, and show alert...</h3>
+							<code>
+							function usingPrompt() {<br>
+
+								var name = prompt('Hi! What is your name?', '');<br>
+								var date = prompt('Hi! ' +name+ '. What the time?', '');<br>
+								var city = prompt('And what is the sity?', '');<br>
+								alert(name+' has a meeting today at '+date+' somewhere in '+city);<br>
+							}<br>
+							usingPrompt();
+							</code>
+						</div>
+																
+						<div class="content">
+							<h3>0.5 Build a function that do currency converter from USD to UAH.</h3>
+							<code>
+							function converter() {<br>
+
+								var usd = prompt('What dollars do you have???', '');<br>
+								var ua = usd*26.0375;<br>
+								alert('It is '+ua+' ukrainian hryvnias!');<br>
+
+								var usd = prompt('What hryvnias do you have???', '');<br>
+								var ua = usd/26.0375;<br>
+								alert('It is '+ua+' american dollars!');<br>
+							}<br>
+							converter();
+							</code>
+						</div>
+											
+						<div class="content">
+							<h3>0.6 Write a JavaScript program to construct the following pattern...</h3>
+							<code>
+							function pattern() <br>{
+								var star = '*';<br>
+								var resolt = '';<br>
+								for (var i = 0; i < 5; i++) {<br>
+									resolt += star;<br>
+									console.log(resolt);<br>
+								}<br>
+							}<br>
+							pattern();
+							</code>
+						</div>
+											
+						<div class="content">
+							<h3>0.7 Write a JavaScript function to convert radians to degrees.</h3>
+							<code>
+							function radiansToDegrees(rad) {<br>
+								deg = rad*(180/Math.PI);<br>
+								return(deg);<br>
+							}<br>
+							console.log( radiansToDegrees(0.7853981633974483) );
+							</code>
+						</div>
+					</div>
+				
+
+				<div class="block-head">
+					<h2 id="two">Category: Easy</h2>
+					<a class="link-to" href="https://github.com/kozakvasyl/JS-Homework/tree/master/Easy" target="_blank">Link to repositopry</a>
+				</div>
+					<div class="block">
+					<div class="content">
+						<h3>1.1 Write a function that returns only pair numbers.</h3>
+						<code>
+							function onlyPairNumbers(arr) {<br>
+	
+								var PairNumbers = arr.filter(function(number) {<br>
+								return number % 2 == 0;<br>
+								});<br>
+
+								console.log(PairNumbers);<br>
+							}
+							onlyPairNumbers([1,5,23,4,2,5,6]);
+						</code>
+					</div>
+
+					<div class="content">
+						<h3>1.2 Write a function that returns min and max numbers.</h3>
+						<code>
+							function maxMinValue(arr) {<br>
+	
+								function compareNumeric(a, b) {<br>
+									if (a > b) return 1;<br>
+									if (a < b) return -1;<br>
+								}<br>
+							arr.sort(compareNumeric);<br>
+							console.log('max: '+arr[arr.length -1]+', min: '+arr[0]);<br>
+							}<br>
+
+							maxMinValue([1,92,-5,25]);
+						</code>
+					</div>
+
+					<div class="content">
+						<h3>1.3 Write a function that returns average number of values.</h3>
+						<code>
+							function average(arr) {<br>
+								var sum =0;<br>
+								for (var i = 0; i < arr.length; i++) {<br>
+									sum = sum + arr[i];<br>
+								}<br>
+								console.log(sum/arr.length);<br>
+							}<br>
+
+							average([1,4,2]);
+						</code>
+					</div>
+				</div>
+							
+			
+				<div class="block-head">
+					<h2 id="three">Category: Medium</h2>
+					<a class="link-to" href="https://github.com/kozakvasyl/JS-Homework/tree/master/Medium" target="_blank">Link to repositopry</a>
+				</div>
+				<div class="block">
+					<div class="content">
+						<h3>2.1 Write a function that reverse a number.</h3>
+						<code>
+							function reverseNumber() {<br>
+								var value = prompt('Write a number!', '');<br>
+								var arr = value.split("").reverse().join("");<br>
+								console.log(arr);<br>
+							}<br>
+
+							reverseNumber();
+						</code>
+					</div>
+
+					<div class="content">
+						<h3>2.2 Write a function that returns reversed string.</h3>
+						<code>
+							function reverseString(str) {<br>
+								var str;<br>
+								var arr = str.split("").reverse().join("");<br>
+								return(arr);<br>
+							}<br>
+							console.log(reverseString('Hello, World!'));
+						</code>
+					</div>
+
+					<div class="content">
+						<h3>2.3 Write a JavaScript function that generates all combinations of a string.</h3>
+						<code>
+							function genCombString(str) {<br>
+								var arr =[];<br>
+								for (var i = 0; i < str.length; i++) {<br>
+									for (var j = i+1; j <= str.length; j++) {<br>
+										arr.push( str.substring(i,j) );<br>
+									}<br>
+								}<br>
+								console.log(arr);<br>
+							}<br>
+							genCombString('rock');
+						</code>
+					</div>
+
+					<div class="content">
+						<h3>2.4 Write an function that converts the first letter in upper case.</h3>
+						<code>
+							function firstLetterUpperCase(str) {<br>
+								var str;<br>
+								var arr = str.split(' ');<br>
+
+									  for (var i = 1; i < arr.length; i++) {<br>
+									    arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);<br>
+									  }<br>
+
+								var arrJoin = arr.join(' ');<br>
+								var ucArr = arrJoin[0].charAt(0).toUpperCase() + arrJoin.slice(1);<br>
+								console.log(ucArr);<br>
+							}<br>
+							firstLetterUpperCase('the quick brown fox');
+						</code>
+					</div>
+
+					<div class="content">
+						<h3>2.5 Write function to find the first not repeated character.</h3>
+						<code>
+							function repeatedNot(str) {<br>
+								var arr = str.split ('').sort();<br>	
+								
+								function repeeted (a,b) {<br>
+									return a = b;<br>
+								}<br>
+								var notRepeeted = arr.reduce(repeeted);<br>
+								alert(notRepeeted);<br>
+							}<br>
+							repeatedNot('abacddbgeceefabbcf');
+						</code>
+					</div>
+
+					<div class="content">
+						<h3>2.6 Write a program to calculate the factorial of a number.</h3>
+						<code>
+							function factorial(n) {<br>
+								
+								if (n != 1) {<br>
+									return n * factorial(n - 1);<br>
+								}<br>
+								else<br>
+									return 1;<br>
+							}<br>
+							console.log( factorial(5) );
+						</code>
+					</div>
+
+					<div class="content">
+						<h3>2.7 Write a function to generate a random integer.</h3>
+						<code>
+							function randomNumber(a, b) {<br>
+								return Math.floor(Math.random() * (a - b) + b);	<br>
+							}<br>
+							console.log( randomNumber(20, 1) );
+						</code>
+					</div>
+
+					<div class="content">
+						<h3>2.8 Write a function to calculate the percentage of a number.</h3>
+						<code>
+							function calcPercentage(per, num) {<br>
+								return ( num / 100 ) * per;<br>
+							}<br>
+							console.log( calcPercentage(1000, 47.12) );
+						</code>
+					</div>
+				</div>
+
+				<div class="block-head">
+					<h2 id="four">Category: Hard</h2>
+					<a class="link-to" href="https://github.com/kozakvasyl/JS-Homework/tree/master/Hard" target="_blank">Link to repositopry</a>
+				</div>
+				<div class="block">   
+					<div class="content">
+						<h3>3.1 Write a recursion function that logs numbers from N to 0.</h3>
+						<code>
+							function recursiveNtoZero(n) {<br>
+								console.log(n);<br>
+								if (n === 0) return;<br>
+								return recursiveNtoO(n-1);<br>
+								
+							}<br>
+
+							console.log( recursiveNtoZero(7) );
+						</code>
+					</div>
+
+						<div class="content">
+						<h3>3.4 Write a JavaScript program to find duplicate values in a JavaScript array.</h3>
+						<code>
+							function findDublicate(arr) {<br>
+								var arrSort = arr.sort();<br>
+								var dublicate = [];<br>
+								for (var i = 0; i < arr.length; i++) {<br>
+								if (arrSort[i] == arrSort[i+1])<br>
+								dublicate.push(arrSort[i]);<br>
+								}<br>
+								alert(dublicate);<br>
+							}<br>
+							findDublicate( [56,1,39,13,78,1.3,39] );
+						</code>
+					</div>
+				</div>
+
+			</div>
+		</main>
+
+		<div class="line"></div>	
+		 <footer class="bottom">
+			<h2>kozakvasyl</h2>
+		 </footer>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

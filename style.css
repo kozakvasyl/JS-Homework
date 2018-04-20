@@ -1,0 +1,161 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font-family:  'Play', sans-serif, 'Arial';
+   }
+
+.wrapper > * {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.wrapper {
+	background: grey;
+}
+
+
+header {
+	background-image: url(header/black_background_.png);
+	height: 275px;
+	width: 100%;
+}
+
+/* .line {
+	background: #DFAE18;
+	height: 5px;
+	width: 100%;
+	z-index: 2;
+} */
+
+h1 {
+	animation: mymove 5s infinite;
+	color: white;
+	font-size: 7em;
+	text-align: center;
+}
+span {
+	color: #DFAE18;
+}
+
+@keyframes mymove {
+    50% {text-shadow: 10px 20px 30px black;}
+    }
+/*____navigation____*/
+nav, ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #555555;
+	width: 100%;
+}
+
+ul {
+	list-style: none;
+}
+li {
+	padding: 10px 0px;
+	transition: all 1s ease-out;
+}
+li:hover {
+	background: #151515;
+	padding: 10px;
+}
+a {
+  text-decoration: none;
+  font-size: 1em;
+  color: white;
+  padding: 10px 10px;
+ }
+
+ /*____main____*/
+
+.main {
+	width: 80%;
+}
+
+.block-head {
+	margin: 10px 0px;
+	padding: 20px;
+	background: #DFC518;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	transition: all 1s ease-out;
+}
+
+.block-head:hover {
+	box-shadow: 5px 5px 20px #555555;
+	background: #DFAE18;
+}
+
+h3 {
+	color: #DFC518;
+}
+.link-to {
+	background: #555555;
+	transition: all 1s ease-out;
+}
+.link-to:hover {
+	transform: scale(1.1);
+}
+
+.block {
+	margin: 0 auto;
+	display:  flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.content {
+ 	padding: 10px;
+ 	margin: 5px;
+ 	width: 49%;
+ 	height: 240px;
+ 	color: white;
+ 	background: #555555;
+ 	overflow-y: auto;
+  }
+
+ @media screen and (max-width: 1280px){
+	.main {
+		width: 98%;
+	}
+}
+
+.bottom {
+	background-image: url(header/black_background_.png);
+	height: 100px;
+	width: 100%;
+	color: white;
+}
+
+ @media screen and (max-width: 1024px){
+	.content {
+ 		width: 100%;
+ 	}
+}
+ @media screen and (max-width: 768px){
+	h1 {
+		font-size: 4em;
+	}
+	.content {
+ 		width: 100%;
+ 	}
+}
+
+ @media screen and (max-width: 375px){
+	h2 {
+ 		font-size: 1em;
+ 		padding: 10px;
+ 	}
+ 	h1 {
+		font-size: 3em;
+}
+}

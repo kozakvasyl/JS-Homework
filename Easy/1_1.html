@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Easy TASK1</title>
+</head>
+<body>
+	<script>
+		function onlyPairNumbers(arr) {
+			
+			var pairNumbers = arr.filter( function(number) {
+				return number % 2 == 0;
+			});
+
+			console.log(pairNumbers);
+		}
+		onlyPairNumbers( [1,5,23,4,2,5,6] );
+	</script>
+</body>
+</html>
+
+

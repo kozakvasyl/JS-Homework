@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>2.4</title>
+</head>
+<body>
+	<script>
+		function firstLetterUpperCase(str) {
+			
+			var str;
+			var arr = str.split(' ');
+
+				  for (var i = 1; i < arr.length; i++) {
+				    arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+				  }
+
+			var arrJoin = arr.join(' ');
+			var upperCaseArr = arrJoin[0].charAt(0).toUpperCase() + arrJoin.slice(1);
+			console.log(upperCaseArr);
+		}
+		firstLetterUpperCase('the quick brown fox');
+	</script>
+</body>
+</html>
+
+

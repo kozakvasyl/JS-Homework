@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>2.5</title>
+</head>
+<body>
+	<script>
+		function repeatedNot(str) {
+			var arr = str.split ('').sort();	
+			
+			function repeeted (a,b) {
+				return a = b;
+			}
+			var notRepeeted = arr.reduce(repeeted);
+			alert(notRepeeted);
+		}
+		repeatedNot('abakcddbgeceefagbbcf');
+	</script>
+</body>
+</html>

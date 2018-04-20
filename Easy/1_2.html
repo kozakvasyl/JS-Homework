@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Easy TASK2</title>
+</head>
+<body>
+	<script>
+		function maxMinValue(arr) {
+	
+			function compareNumeric(a, b) {
+				if (a > b) return 1;
+				if (a < b) return -1;
+			}
+		
+		arr.sort(compareNumeric);
+		console.log( 'max: '+arr[arr.length -1]+', min: '+arr[0] );
+		}
+
+		maxMinValue( [1,92,-5,25] );
+	</script>
+</body>
+</html>
+
+
