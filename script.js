@@ -181,7 +181,7 @@ function repeatedNot(str) {
 }
 repeatedNot('abakcddbgeceefagbbcf');*/
 
-// ----medium TASK5
+/*// ----medium TASK5
 function repeatedNot(str) {
 	var i = 0;
 	while (i < str.length) {
@@ -190,7 +190,7 @@ function repeatedNot(str) {
 	i++;
 	}
 }
-repeatedNot('abacddbec');
+repeatedNot('abacddbec');*/
 
 // ----medium TASK6
 /*function factorial(n) {
@@ -259,4 +259,4 @@ function findDublicate(arr) {
 	}
 	alert(dublicate);
 }
-findDublicate( [56,1,39,13,37,78,1.3,39] );*/
+findDublicate( [13,56,1,39,13,37,78,1.3 ,39] );*/
