@@ -7,17 +7,15 @@
 <body>
 	<script>
 		function maxMinValue(arr) {
-	
-			function compareNumeric(a, b) {
-				if (a > b) return 1;
-				if (a < b) return -1;
-			}
-		
-		arr.sort(compareNumeric);
-		console.log( 'max: '+arr[arr.length -1]+', min: '+arr[0] );
+			var min = arr[0];
+			var max = arr[0];
+				for (i = 1; i < arr.length; i++){
+					if (arr[i] < min) min = arr[i];
+					if (arr[i] > max) max = arr[i];
+				}
+			console.log('min: '+min+', max: '+max);
 		}
-
-		maxMinValue( [1,92,-5,25] );
+		maxMinValue([1,92,-5,25,100,-7]);
 	</script>
 </body>
 </html>

@@ -7,13 +7,13 @@
 <body>
 	<script>
 		function converter() {
-
+			var change = 26.0375;
 			var usd = prompt('What dollars do you have???', '');
-			var ua = usd*26.0375;
+			var ua = usd*change;
 			alert('It is '+ua+' ukrainian hryvnias!');
 
 			var usd = prompt('What hryvnias do you have???', '');
-			var ua = usd/26.0375;
+			var ua = usd/change;
 			alert('It is '+ua+' american dollars!');
 		}
 		converter();

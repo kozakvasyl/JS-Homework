@@ -85,16 +85,15 @@
 							<h3>0.5 Build a function that do currency converter from USD to UAH.</h3>
 							<code>
 							function converter() {<br>
-
+								var change = 26.0375;<br>
 								var usd = prompt('What dollars do you have???', '');<br>
-								var ua = usd*26.0375;<br>
+								var ua = usd*change;<br>
 								alert('It is '+ua+' ukrainian hryvnias!');<br>
-
 								var usd = prompt('What hryvnias do you have???', '');<br>
-								var ua = usd/26.0375;<br>
+								var ua = usd/change;<br>
 								alert('It is '+ua+' american dollars!');<br>
 							}<br>
-							converter();
+							converter();<br>
 							</code>
 						</div>
 											
@@ -151,17 +150,16 @@
 					<div class="content">
 						<h3>1.2 Write a function that returns min and max numbers.</h3>
 						<code>
-							function maxMinValue(arr) {<br>
-	
-								function compareNumeric(a, b) {<br>
-									if (a > b) return 1;<br>
-									if (a < b) return -1;<br>
+						function maxMinValue(arr) {<br>
+							var min = arr[0];<br>
+							var max = arr[0];<br>
+								for (i = 1; i < arr.length; i++){<br>
+									if (arr[i] < min) min = arr[i];<br>
+									if (arr[i] > max) max = arr[i];<br>
 								}<br>
-							arr.sort(compareNumeric);<br>
-							console.log('max: '+arr[arr.length -1]+', min: '+arr[0]);<br>
-							}<br>
-
-							maxMinValue([1,92,-5,25]);
+							console.log('min: '+min+', max: '+max);<br>
+						}<br>
+						maxMinValue([1,92,-5,25,100,-7]);
 						</code>
 					</div>
 

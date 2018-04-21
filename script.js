@@ -1,5 +1,5 @@
-// ----TASK1
-/*function numFromTenToZero() {
+/*// ----TASK1
+function numFromTenToZero() {
 	for (var i = 10; i >= 0; i--) {
 		console.log(i);
 	}
@@ -41,13 +41,13 @@ usingPrompt();*/
 
 /*// ----TASK5
 function converter() {
-
+	var change = 26.0375;
 	var usd = prompt('What dollars do you have???', '');
-	var ua = usd*26.0375;
+	var ua = usd*change;
 	alert('It is '+ua+' ukrainian hryvnias!');
 
 	var usd = prompt('What hryvnias do you have???', '');
-	var ua = usd/26.0375;
+	var ua = usd/change;
 	alert('It is '+ua+' american dollars!');
 }
 converter();*/
@@ -90,8 +90,8 @@ onlyPairNumbers([1,5,23,4,2,5,6]);*/
 
 
 
-/*// ----easy TASK2
-function maxMinValue(arr) {
+// ----easy TASK2
+/*function maxMinValue(arr) {
 	
 	function compareNumeric(a, b) {
 		if (a > b) return 1;
@@ -101,7 +101,18 @@ arr.sort(compareNumeric);
 console.log('max: '+arr[arr.length -1]+', min: '+arr[0]);
 }
 
-maxMinValue([1,92,-5,25]);*/
+maxMinValue([1,92,-5,25]);
+
+function maxMinValue(arr) {
+	var min = arr[0];
+	var max = arr[0];
+		for (i = 1; i < arr.length; i++){
+			if (arr[i] < min) min = arr[i];
+			if (arr[i] > max) max = arr[i];
+		}
+	console.log('min: '+min+', max: '+max);
+}
+maxMinValue([1,92,-5,25,100,-7]);*/
 
 
 // ----easy TASK3
