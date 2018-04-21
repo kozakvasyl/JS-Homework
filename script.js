@@ -259,4 +259,16 @@ function findDublicate(arr) {
 	}
 	alert(dublicate);
 }
-findDublicate( [13,56,1,39,13,37,78,1.3 ,39] );*/
+findDublicate( [1,1,1,1] );
+
+function findDublicate(arr) {
+var arrSort = arr.sort();  
+var dublicate = [];
+    for (var i = 0; i < arr.length; i++) {
+    	if (arrSort[i] == arrSort[i+1] && dublicate.indexOf(arrSort[i]) === -1)
+    	dublicate.push(arrSort[i]);
+    }
+console.log(dublicate)
+}
+findDublicate( [1,15,18,1,13,15,93,18] );
+findDublicate( [1,1,1,1] );*/
