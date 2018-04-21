@@ -1,7 +1,7 @@
-/*// ----TASK1
-function numFromTenToZero() {
+// ----TASK1
+/*function numFromTenToZero() {
 	for (var i = 10; i >= 0; i--) {
-	  console.log (i);
+		console.log(i);
 	}
 }
 numFromTenToZero();*/
@@ -9,20 +9,21 @@ numFromTenToZero();*/
 
 
 /*// ----TASK2
-function PythagoreanTheorem(a,b) {
-
+function pythagoreanTheorem(a,b) {
+	var a;
+	var b;
 	var c = Math.sqrt(a*a + b*b);
-	console.log(c);
+	return c;
 }
-PythagoreanTheorem(3,4);*/
+console.log( pythagoreanTheorem(3,4) );*/
 
 
 
 /*// ----TASK3
-function convertCtoF(c) {
-	var c;
-	var f = c * 1.8 + 32;
-	return(f);
+function convertCtoF(celsium) {
+	var celsium;
+	var fahrenheit = celsium * 1.8 + 32;
+	return(fahrenheit);
 }
 console.log( convertCtoF(42) );*/
 
@@ -68,7 +69,9 @@ pattern();
 
 /*// ----TASK7
 function radiansToDegrees(rad) {
-	deg = rad*(180/Math.PI);
+	var deg;
+	var pi = Math.PI;
+	deg = rad*(180/pi);
 	return(deg);
 }
 console.log( radiansToDegrees(0.7853981633974483) );*/

@@ -37,7 +37,6 @@
 								for (var i = 10; i >= 0; i--) {<br>
 									console.log (i);<br>
 								}<br>
-						
 							numFromTenToZero();
 							</code>
 						</div>
@@ -46,22 +45,23 @@
 						<div class="content">
 							<h3>0.2 Write a function that implements Pythagorean theorem.</h3>
 							<code>
-							function PythagoreanTheorem(a,b) {<br>
-
+							function pythagoreanTheorem(a,b) {<br>
+								var a;<br>
+								var b;<br>
 								var c = Math.sqrt(a*a + b*b);<br>
-								console.log(c);<br>
-							}<br> 
-							PythagoreanTheorem(3,4);
+								return c;<br>
+							}<br>
+							console.log( pythagoreanTheorem(3,4) );
 							</code>
 						</div>
 
 						<div class="content">
 							<h3>0.3 Write a function to convert celsius into fahrenheit.</h3>
 							<code>
-							function convertCtoF(c) {<br>
-								var c;<br>
-								var f = c * 1.8 + 32;<br>
-								return(f);<br>
+							function convertCtoF(celsium) {<br>
+								var celsium;<br>
+								var fahrenheit = celsium * 1.8 + 32;<br>
+								return(fahrenheit);<br>
 							}<br>
 							console.log( convertCtoF(42) );
 							</code>
@@ -116,11 +116,13 @@
 						<div class="content">
 							<h3>0.7 Write a JavaScript function to convert radians to degrees.</h3>
 							<code>
-							function radiansToDegrees(rad) {<br>
-								deg = rad*(180/Math.PI);<br>
-								return(deg);<br>
-							}<br>
-							console.log( radiansToDegrees(0.7853981633974483) );
+								function radiansToDegrees(rad) {<br>
+									var deg;<br>
+									var pi = Math.PI;<br>
+									deg = rad*(180/pi);<br>
+									return(deg);<br>
+								}<br>
+								console.log( radiansToDegrees(0.7853981633974483) );
 							</code>
 						</div>
 					</div>
