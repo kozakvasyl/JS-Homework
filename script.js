@@ -222,19 +222,24 @@ function recursiveNtoO(n) {
 
 console.log( recursiveNtoO(7) );*/
 
-// ----hard TASK3
+/*// ----hard TASK3
+var arr = [3,8,14,19,36,72,144,290,333,490]
 
-
-function binarySearch (arr) {
+function binarySearch (arr, value) {
 	var first = arr.indexOf( arr[0] );
 	var last = arr.indexOf( arr[arr.length-1] );
-	var midle = Math.floor( (first+last)/2 );
-
-		alert(midle);
+	
+		while (first <= last) {
+			var midle = Math.floor( (first+last)/2 );
+			 if (arr[midle] > value)
+			 	arr[first] = arr[midle-1];
+			 else if (arr[midle] < value)
+			 	arr[last] = arr[midle+1];
+			 else console.log( arr[midle] );
+		}
+		console.log('Is not a value!');
 	}
-
-
-binarySearch ([3,8,14,19,36,72,144,290,333,490]);
+binarySearch (arr, 333);*/
 
 /*// ----hard TASK4
 function findDublicate(arr) {
@@ -247,20 +252,3 @@ function findDublicate(arr) {
 	alert(dublicate);
 }
 findDublicate( [56,1,39,13,37,78,1.3,39] );*/
-
-/*BinarySearch(A[0..N-1], value) {
-  low = 0
-  high = N - 1
-  while (low <= high) {
-    mid = (low + high) / 2
-    if (A[mid] > value)
-      high = mid - 1
-    else
-      if (A[mid] < value)
-        low = mid + 1
-      else
-        return mid // знайдено
-  }
-  return -1 // не знайдено
-}
-*/
