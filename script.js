@@ -128,18 +128,15 @@ average([1,4,2]);*/
 
 
 /*// ----medium TASK1
-function reverseNumber() {
-	var value = prompt('Write a number!', '');
+function reverseNumber(value) {
 	var arr = value.split("").reverse().join("");
 	console.log(arr);
 }
-
-reverseNumber();*/
+reverseNumber('123456');*/
 
 
 /*// ----medium TASK2
 function reverseString(str) {
-	var str;
 	var arr = str.split("").reverse().join("");
 	return(arr);
 }
@@ -157,13 +154,12 @@ console.log(reverseString('Hello, World!'));*/
 }
 genCombString('rock');*/
 
-  
+
 /*// ----medium TASK4
 function firstLetterUpperCase(str) {
-	var str;
 	var arr = str.split(' ');
 
-		  for (var i = 1; i < arr.length; i++) {
+		  for (var i = 0; i < arr.length; i++) {
 		    arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
 		  }
 
@@ -185,18 +181,16 @@ function repeatedNot(str) {
 }
 repeatedNot('abakcddbgeceefagbbcf');*/
 
-/*// ----medium TASK5
+// ----medium TASK5
 function repeatedNot(str) {
 	var i = 0;
 	while (i < str.length) {
-		
-		if ( str.indexOf ( str[i]) === str.lastIndexOf (str[i]) ) {
-			alert(str[i]);
-		}
+		if ( str.indexOf ( str[i]) == str.lastIndexOf(str[i]) ) {
+			console.log(str[i]);}
 	i++;
 	}
 }
-repeatedNot('abacddbec');*/
+repeatedNot('abacddbec');
 
 // ----medium TASK6
 /*function factorial(n) {

@@ -7,15 +7,14 @@
 <body>
 	<script>
 		function repeatedNot(str) {
-			var arr = str.split ('').sort();	
-			
-			function repeeted (a,b) {
-				return a = b;
+			var i = 0;
+			while (i < str.length) {
+				if ( str.indexOf ( str[i]) == str.lastIndexOf (str[i]) ) {
+					console.log(str[i]);}
+			i++;
 			}
-			var notRepeeted = arr.reduce(repeeted);
-			alert(notRepeeted);
 		}
-		repeatedNot('abakcddbgeceefagbbcf');
+		repeatedNot('abacddbec');
 	</script>
 </body>
 </html>

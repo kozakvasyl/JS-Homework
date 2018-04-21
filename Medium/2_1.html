@@ -6,13 +6,11 @@
 </head>
 <body>
 	<script>
-		function reverseNumber() {
-			var value = prompt('Write a number!', '');
+		function reverseNumber(value) {
 			var arr = value.split("").reverse().join("");
 			console.log(arr);
 		}
-
-		reverseNumber();
+		reverseNumber('123456');
 	</script>
 </body>
 </html>

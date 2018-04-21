@@ -188,13 +188,11 @@
 					<div class="content">
 						<h3>2.1 Write a function that reverse a number.</h3>
 						<code>
-							function reverseNumber() {<br>
-								var value = prompt('Write a number!', '');<br>
+							function reverseNumber(value) {<br>
 								var arr = value.split("").reverse().join("");<br>
 								console.log(arr);<br>
 							}<br>
-
-							reverseNumber();
+							reverseNumber('123456');<br>
 						</code>
 					</div>
 
@@ -202,7 +200,6 @@
 						<h3>2.2 Write a function that returns reversed string.</h3>
 						<code>
 							function reverseString(str) {<br>
-								var str;<br>
 								var arr = str.split("").reverse().join("");<br>
 								return(arr);<br>
 							}<br>
@@ -230,13 +227,10 @@
 						<h3>2.4 Write an function that converts the first letter in upper case.</h3>
 						<code>
 							function firstLetterUpperCase(str) {<br>
-								var str;<br>
 								var arr = str.split(' ');<br>
-
-									  for (var i = 1; i < arr.length; i++) {<br>
+									  for (var i = 0; i < arr.length; i++) {<br>
 									    arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);<br>
 									  }<br>
-
 								var arrJoin = arr.join(' ');<br>
 								var ucArr = arrJoin[0].charAt(0).toUpperCase() + arrJoin.slice(1);<br>
 								console.log(ucArr);<br>
@@ -249,15 +243,14 @@
 						<h3>2.5 Write function to find the first not repeated character.</h3>
 						<code>
 							function repeatedNot(str) {<br>
-								var arr = str.split ('').sort();<br>	
-								
-								function repeeted (a,b) {<br>
-									return a = b;<br>
+								var i = 0;<br>
+								while (i < str.length) {<br>
+									if ( str.indexOf ( str[i]) == str.lastIndexOf(str[i]) ) {<br>
+										console.log(str[i]);}<br>
+								i++;<br>
 								}<br>
-								var notRepeeted = arr.reduce(repeeted);<br>
-								alert(notRepeeted);<br>
 							}<br>
-							repeatedNot('abacddbgeceefabbcf');
+							repeatedNot('abacddbec');
 						</code>
 					</div>
 
